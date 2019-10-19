@@ -15,11 +15,11 @@ Y(s) =   -----------------
 
 which can be defined in matlab as
 
-
-```num = [a b];
+```
+num = [a b];
 den = [c d e];
-sys = tf(num,den);```
-
+sys = tf(num,den);
+```
 
 You can use the function as follows
 
