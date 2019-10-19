@@ -5,7 +5,7 @@
 %
 %
 
-function dispPFE(my_tf)
+function tf_pfe(my_tf)
 
     [my_num, my_den] = tfdata(my_tf);
     my_num = cell2mat(my_num);
