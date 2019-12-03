@@ -2,9 +2,9 @@
 
 Useful Functions the I've Written for Matlab
 
-  -[Background](#background-knowledge)
-  -[Plot Asymptotes on Bode Plots](#bodeAs)
-  -[Partial Fraction Expansion of a Transfer Function](#tf_pfe)
+  - [Background](#background-knowledge)
+  - [Plot Asymptotes on Bode Plots](#bodeAs)
+  - [Partial Fraction Expansion of a Transfer Function](#tf_pfe)
   
 
 
