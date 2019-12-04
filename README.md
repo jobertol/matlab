@@ -2,10 +2,10 @@
 
 Useful Functions the I've Written for Matlab
 
-  - [Control Systems](#control-systems)
+  - [Control Systems](#control-systems) ([Code](https://github.com/jobertol/matlab/blob/master/Controls%20Systems))
     - [Background](#background-knowledge)
-    - [Plot Asymptotes on Bode Plots](#bodeAs)
-    - [Partial Fraction Expansion of a Transfer Function](#tf_pfe)
+    - [Plot Asymptotes on Bode Plots](#bodeAs) ([Code](https://github.com/jobertol/matlab/blob/master/Controls%20Systems/bodeAs.m))
+    - [Partial Fraction Expansion of a Transfer Function](#tf_pfe) ([Code](https://github.com/jobertol/matlab/blob/master/Controls%20Systems/tf_pfe.m))
   
 
 ## Control Systems
