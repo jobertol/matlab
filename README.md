@@ -25,7 +25,7 @@ Y(s) =   ---------------------------------
 
 which can be defined in matlab as
 
-```
+```MATLAB
 num = [12000];
 den = [1 25 4100 24500 0];
 sys = tf(num,den);
@@ -44,7 +44,7 @@ You can use this function as follows:
 It is also possible to change the aesthetics of the asymptotes and key frequency markers.
 There are five parameters at the beginning of the function:
 
-```
+```MATLAB
 function bodeAs(sys,wLow,wHigh)
 
     % Parameters for Graph Aesthetics
