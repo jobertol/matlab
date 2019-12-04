@@ -2,13 +2,16 @@
 
 Useful Functions the I've Written for Matlab
 
-  - [Background](#background-knowledge)
-  - [Plot Asymptotes on Bode Plots](#bodeAs)
-  - [Partial Fraction Expansion of a Transfer Function](#tf_pfe)
+  - [Control Systems](#control-systems)
+    - [Background](#background-knowledge)
+    - [Plot Asymptotes on Bode Plots](#bodeAs)
+    - [Partial Fraction Expansion of a Transfer Function](#tf_pfe)
   
 
+## Control Systems
 
-## Background Knowledge
+
+### Background Knowledge
 
 These functions are written for monovariable transfer functions (1x1 tf) such as
 
@@ -30,7 +33,7 @@ sys = tf(num,den);
 
 
 
-## bodeAs
+### bodeAs
 
 Like the Matlab function bode(), this function plots the magnitude and phase portions of a bode plot.
 Additionally, it plots the asymptotes and the key frequencies at which asymptotes change.
@@ -66,7 +69,7 @@ More info on `sys` can be found in the [Background](#background-knowledge) secti
 
 
 
-## tf_pfe
+### tf_pfe
 
 You can use this function to display the **Partial Fraction Expansion** of a transfer function:
 
