@@ -2,10 +2,17 @@
 
 Useful Functions the I've Written for Matlab
 
+  - [Background](#background-knowledge)
+  - [Plot Asymptotes on Bode Plots](#bodeAs)
+  - [Partial Fraction Expansion of a Transfer Function](#tf_pfe)
+  
 
-## tf_pfe
 
-This function takes an input of a transfer function (1x1 tf) such as
+## Background Knowledge
+
+These functions are written for monovariable transfer functions (1x1 tf) such as
+
+This function takes an input of a monovariable transfer function (1x1 tf) such as
 
 ```
                        12000
@@ -21,7 +28,29 @@ den = [1 25 4100 24500 0];
 sys = tf(num,den);
 ```
 
-You can use the function to display the **Partial Fraction Expansion** of the transfer function
+
+
+## bodeAs
+
+Like the Matlab function bode(), this function plots the magnitude and phase portions of a bode plot.
+Additionally, it plots the asymptotes and the key frequencies at which asymptotes change.
+
+You can use this function as follows:
+`
+bodeAs(sys);
+`
+or
+`
+bodeAs(sys,minFreq,maxFreq);
+`
+
+More info on `sys` can be found in the [Background](#background-knowledge) section.
+
+
+
+## tf_pfe
+
+You can use this function to display the **Partial Fraction Expansion** of the transfer function
 
 `
 tf_pfe(sys)
@@ -34,3 +63,5 @@ The output is
 Y(s) = ----------------------  +  ----------------------  +  ---------------------  +  --------------------
         s-(-9.4253+62.4119j)       s-(-9.4253-62.4119j)       s-(-6.1495+0.0000j)       s-(0.0000+0.0000j) 
 ```
+
+More info on 'sys' can be found in the [Background](#background-knowledge) section.
