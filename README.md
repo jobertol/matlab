@@ -36,13 +36,13 @@ Like the Matlab function bode(), this function plots the magnitude and phase por
 Additionally, it plots the asymptotes and the key frequencies at which asymptotes change.
 
 You can use this function as follows:
-`
-bodeAs(sys);
-`
-or
-`
-bodeAs(sys,minFreq,maxFreq);
-`
+`bodeAs(sys);` or `bodeAs(sys,minFreq,maxFreq);`
+
+`bode(sys);` will plot
+![Image of bode plot](https://github.com/jobertol/matlab/blob/master/Images/bodePlot.jpg)
+
+`bodeAs(sys);` will plot
+![Image of bodeAs plot](https://github.com/jobertol/matlab/blob/master/Images/bodeAsPlot.jpg)
 
 More info on `sys` can be found in the [Background](#background-knowledge) section.
 
