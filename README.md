@@ -38,11 +38,29 @@ Additionally, it plots the asymptotes and the key frequencies at which asymptote
 You can use this function as follows:
 `bodeAs(sys);` or `bodeAs(sys,minFreq,maxFreq);`
 
-`bode(sys);` will plot
-![Image of bode plot](https://github.com/jobertol/matlab/blob/master/Images/bodePlot.jpg)
+It is also possible to change the aesthetics of the asymptotes and key frequency markers.
+There are five parameters at the beginning of the function:
+
+```
+function bodeAs(sys,wLow,wHigh)
+
+    % Parameters for Graph Aesthetics
+    lineWidth = 0.5;
+    dottedWidth = 1;
+    dotColor = 'g';
+    asymColor = 'r';
+    markSize = 5;
+    ...
+```
+
+It is fairly intuitive, but for more information read [this](https://www.mathworks.com/help/matlab/ref/linespec.html).
 
 `bodeAs(sys);` will plot
 ![Image of bodeAs plot](https://github.com/jobertol/matlab/blob/master/Images/bodeAsPlot.jpg)
+
+
+`bode(sys);` will only plot
+![Image of bode plot](https://github.com/jobertol/matlab/blob/master/Images/bodePlot.jpg)
 
 More info on `sys` can be found in the [Background](#background-knowledge) section.
 
@@ -50,7 +68,7 @@ More info on `sys` can be found in the [Background](#background-knowledge) secti
 
 ## tf_pfe
 
-You can use this function to display the **Partial Fraction Expansion** of the transfer function
+You can use this function to display the **Partial Fraction Expansion** of a transfer function:
 
 `
 tf_pfe(sys)
